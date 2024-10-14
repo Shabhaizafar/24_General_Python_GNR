@@ -1,6 +1,6 @@
 # List Methods : .
-myList  = [101,100,111,200,300,1001,100,"Royal","Soft",True]
-print(myList)
+# myList  = [101,100,111,200,300,1001,100,"Royal","Soft",True]
+# print(myList)
 
 # len()
 # print(len(myList))
@@ -98,3 +98,48 @@ mixed_list = [
     {1, 2, 3}, complex(2, 3)
 ]
 '''
+
+
+
+'''
+14/10/2024
+'''
+# myList  = [101,100,111,200,300,1001,100,"Royal","Soft",True]
+# index:    0   1   2   3   4    5   6    7       8      9
+# index2:  -10 -9  -8  -7  -6   -5  -4    -3     -2     -1              
+# print(myList)
+
+# print(myList[0])
+# print(myList[-10])
+
+
+# pop,reverse,sort : 
+
+# recap :  remove : 
+# myList.remove(101)
+# print(myList)
+
+# pop() : remove  specific index(negative index/positive) Value 
+# if length greathan 0 then return deleted Value else showing error
+# myList.pop(-1)   # default
+# myList.pop(-3)  
+# myList.pop(5)  
+# ans = myList.pop(5)   
+
+# print(myList)
+# print(ans)
+
+
+
+# reverse() : 
+# myList.reverse()
+# print(myList[0])
+
+# myList = [14,11,56,12,30,10,5,3,19]
+
+# myList = [10,1,111,10001,11,1111,1001]
+# print(myList)
+# myList.sort()   # acending
+# myList.sort(reverse=True)   # decending
+
+# print(myList)
