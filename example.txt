@@ -1,0 +1,30 @@
+
+1. **Count Occurrences**: Write a function that counts the occurrences of each string in a list and returns a dictionary with the string as the key and the count as the value.
+
+2. **Filter Strings**: Create a function that filters out strings from a list that are shorter than a given length.
+
+3. **Concatenate Lists**: Write a function that takes two lists of strings and concatenates them into a single list without duplicates.
+
+4. **Sort Strings**: Implement a function that sorts a list of strings by their lengths, from shortest to longest.
+
+5. **Find Common Strings**: Given two lists of strings, write a function to find the common strings present in both lists.
+
+6. **Longest String**: Write a function that finds the longest string in a list and returns it.
+
+7. **Reverse Each String**: Create a function that takes a list of strings and returns a new list with each string reversed.
+
+8. **String Uniqueness**: Write a function that returns True if all strings in a list are unique, otherwise False.
+
+9. **Join Strings**: Implement a function that takes a list of strings and joins them into a single string with a specified delimiter.
+
+10. **Count Vowels**: Write a function that counts the total number of vowels in a list of strings.
+
+11. **String Transformation**: Create a function that transforms all strings in a list to uppercase.
+
+12. **Check Prefix**: Implement a function that checks if any string in the list starts with a given prefix.
+
+13. **Anagram Grouping**: Write a function that groups anagrams from a list of strings into sublists.
+
+14. **Remove Duplicates**: Create a function that removes duplicate strings from a list while preserving the original order.
+
+15. **Find Palindromes**: Write a function that returns a list of all palindromic strings from a given list.
