@@ -8,12 +8,12 @@
 # print(myDict)
 # print(type(myDict))
 
-myDict = {
-    # key          value         = property
-    'firstname' : "Zafar",
-    'lastname' : "A",
-    'Age'      : 1
-}
+# myDict = {
+#     # key          value         = property
+#     'firstname' : "Zafar",
+#     'lastname' : "A",
+#     'Age'      : 1
+# }
 # print(myDict)
 # print(myDict['firtname'])
 # print(myDict.firstname)  # Error
@@ -35,9 +35,9 @@ myDict = {
 # print(id(duplicateDict))
 
             # Key
-deletedkey = myDict.pop("firstname")    
-print(myDict)
-print(deletedkey)  # return value 
+# deletedkey = myDict.pop("firstname")    
+# print(myDict)
+# print(deletedkey)  # return value 
 
 
 
