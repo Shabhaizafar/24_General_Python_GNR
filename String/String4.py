@@ -9,7 +9,7 @@
 # obj : multiple data available  
 
 # myNum = 123
-# print(len(myNum))
+# print(len(myNum)) # error
 
 # id 
 # mystr1 = "Zafar"
