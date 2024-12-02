@@ -83,10 +83,17 @@
 
 
 
+
+mySet1 = set([1,12,13,14,15])
+
 # mySet1.issubset
 
+# print(mySet1.issubset([1,12,13,14,15,16]))
 
 
-
-
+# set1  > set2    >>> issubset
 # mySet1.discard
+# mySet1.remove(10)
+# mySet1.discard(10)
+# print(mySet1)
+# mySet1.remove()  # if exist then remove else error
