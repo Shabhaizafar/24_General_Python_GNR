@@ -50,41 +50,72 @@
 
 # 3. **String Pattern Matching**:  
 #    Write a Python function that extracts all unique words (case-insensitive) from a string and returns them as a sorted list. Ignore punctuation.
-mystr = """
-Python is a versatile programming language that excels in handling various data structures like lists, tuples, strings, sets, and dictionaries. Lists allow dynamic storage of elements, supporting operations like slicing, filtering, and sorting. Tuples are immutable sequences used when data integrity is crucial. Strings offer powerful manipulation methods for pattern matching, splitting, and formatting. Sets are collections of unique elements, ideal for operations like union, intersection, and difference. Dictionaries, or key-value pairs, enable efficient data retrieval and organization. Python's comprehensions and built-in functions simplify processing these structures, making it a powerful tool for tasks ranging from basic operations to advanced data processing.
-"""
-myList = [] 
-temp = ""
-for i in mystr : 
-    if(ord(i)>=65 and ord(i)<=90):
-        temp+=i;
-    elif(ord(i)>=97 and ord(i)<=122):
-        temp+=i;
-    elif ord(i) == 39 : 
-        temp+=i;
-    else:
-        if temp=="":
-            continue
-        myList.append(temp.lower())
-        temp=""
+# mystr = """
+# Python is a versatile programming language that excels in handling various data structures like lists, tuples, strings, sets, and dictionaries. Lists allow dynamic storage of elements, supporting operations like slicing, filtering, and sorting. Tuples are immutable sequences used when data integrity is crucial. Strings offer powerful manipulation methods for pattern matching, splitting, and formatting. Sets are collections of unique elements, ideal for operations like union, intersection, and difference. Dictionaries, or key-value pairs, enable efficient data retrieval and organization. Python's comprehensions and built-in functions simplify processing these structures, making it a powerful tool for tasks ranging from basic operations to advanced data processing.
+# """
+# myList = [] 
+# temp = ""
+# for i in mystr : 
+#     if(ord(i)>=65 and ord(i)<=90):
+#         temp+=i;
+#     elif(ord(i)>=97 and ord(i)<=122):
+#         temp+=i;
+#     elif ord(i) == 39 : 
+#         temp+=i;
+#     else:
+#         if temp=="":
+#             continue
+#         myList.append(temp.lower())
+#         temp=""
 
-mySet = set(myList)
-myList = list(mySet)
-myList.sort()
-print(myList)
+# mySet = set(myList)
+# myList = list(mySet)
+# myList.sort()
+# print(myList)
+#####################################################################
 # 4. **Set Operations with Comprehensions**:  
 #    Write a Python function to find the symmetric difference of two sets and return only the elements that are prime numbers.  
 
-# 5. **Nested Dictionary Processing**:  
-#    Write a Python function that takes a nested dictionary and returns a flat dictionary where keys are the original keys joined by `"."`.  
-#    Example:  
-#    ```python
-#    Input: {"a": {"b": {"c": 1}}, "d": 2}  
-#    Output: {"a.b.c": 1, "d": 2}
-#    ```  
+# mySet1 = {11,12,13,"Zafar",True}
+# mySet2 = {12,14,15,"Zafar"}
+
+# print(mySet1)
+# print(mySet2)
+# myList = list(mySet1.symmetric_difference(mySet2)) 
+# finalLi = []
+# for value in myList :
+#     count = 0
+#     if(type(1)== type(value)):
+#         for i in range(1,value):  
+#             if(value%i==0): 
+#                 count+=1
+#         if(count==1):
+#             finalLi.append(value)
+
+# print(set(finalLi))
+
+
+
+
+#####################################################################
 
 # 6. **List of Tuples Sorting**:  
 #    Given a list of tuples `[(1, 'apple'), (3, 'banana'), (2, 'cherry')]`, write a Python function to sort the list by the second element of each tuple in descending order.  
+
+# myList = [(1, 'apple'), (3, 'banana'), (2, 'cherry')]
+
+# for i in range(0,len(myList)):
+#     for j in range(0,len(myList)):
+#         if(myList[i][1][0]>myList[j][1][0]):
+#             temp = myList[i]
+#             myList[i] = myList[j]
+#             myList[j] = temp
+
+# print(myList)
+
+            
+
+
 
 # 7. **String Frequency Analysis**:  
 #    Write a Python function to count the frequency of each character in a string (ignoring case) and return the result as a dictionary.  
@@ -98,6 +129,14 @@ print(myList)
 # 10. **Combining Data Structures**:  
 #     Write a Python function that takes a list of tuples representing key-value pairs, converts it into a dictionary, and then finds the set of all keys that have numeric values greater than 50.  
 
+
+# 5. **Nested Dictionary Processing**:  
+#    Write a Python function that takes a nested dictionary and returns a flat dictionary where keys are the original keys joined by `"."`.  
+#    Example:  
+#    ```python
+#    Input: {"a": {"b": {"c": 1}}, "d": 2}  
+#    Output: {"a.b.c": 1, "d": 2}
+#    ```  
 
 
 # //////////////////////////////
@@ -114,3 +153,6 @@ print(myList)
 # Write a Python function that counts the frequency of each unique word (case-insensitive) in a string and returns a dictionary sorted by the word's frequency in descending order. Ignore punctuation.
 
 #-------------------------------------------
+
+
+
