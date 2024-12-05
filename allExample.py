@@ -127,8 +127,14 @@
 #    Write a Python function to filter a dictionary, keeping only the key-value pairs where the value is of type `int` and greater than 10.  
 
 # 10. **Combining Data Structures**:  
-#     Write a Python function that takes a list of tuples representing key-value pairs, converts it into a dictionary, and then finds the set of all keys that have numeric values greater than 50.  
+#     Write a Python function that takes a list of tuples representing key-value pairs, converts it into a dictionary,
 
+# remaining :  and then finds the set of all keys that have numeric values greater than 50.  
+[("Fname","Raj"),("Lname","Shah"),("Age",13)]
+
+{
+    "Fname" : "Raj",
+}
 
 # 5. **Nested Dictionary Processing**:  
 #    Write a Python function that takes a nested dictionary and returns a flat dictionary where keys are the original keys joined by `"."`.  
@@ -154,5 +160,42 @@
 
 #-------------------------------------------
 
+mystr = """
+ Python is a versatile programming language that excels in handling various data structures like lists, tuples, strings, sets, and dictionaries. Lists allow dynamic storage of elements, supporting operations like slicing, filtering, and sorting. Tuples are immutable sequences used when data integrity is crucial. Strings offer powerful manipulation methods for pattern matching, splitting, and formatting. Sets are collections of unique elements, ideal for operations like union, intersection, and difference. Dictionaries, or key-value pairs, enable efficient data retrieval and organization. Python's comprehensions and built-in functions simplify processing these structures, making it a powerful tool for tasks ranging from basic operations to advanced data processing.
+"""
+myList = [] 
+temp = ""
+for i in mystr : 
+    if(ord(i)>=65 and ord(i)<=90):
+        temp+=i;
+    elif(ord(i)>=97 and ord(i)<=122):
+        temp+=i;
+    elif ord(i) == 39 : 
+        temp+=i;
+    else:
+        if temp=="":
+            continue
+        myList.append(temp.lower())
+        temp=""
+
+myDict = {}
+for i in myList : 
+    myDict.setdefault(i,tuple(myList).count(i))
+# print(myDict)
 
 
+
+sortedDict = {}
+while(1):
+    if(len(myDict)==0):
+        break
+    key1 = None
+    value1 = 0
+    for key in myDict:
+        if(value1<myDict[key]):
+            value1 = myDict[key]
+            key1 = key 
+    sortedDict.setdefault(key1,value1)
+    del myDict[key1]
+            
+print(sortedDict)
