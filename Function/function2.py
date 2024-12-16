@@ -125,7 +125,7 @@
 
 # Print checking numbers:
 # True
-# True
+# True      
 
 # 10. Write a Python program to create Fibonacci series up to n using Lambda.
 # Fibonacci series upto 2:
@@ -136,3 +136,32 @@
 # [0, 1, 1, 2, 3, 5]
 # Fibonacci series upto 9:
 # [0, 1, 1, 2, 3, 5, 8, 13, 21]
+# a = 0
+# b = 1
+# temp = 0
+# n = 10
+# myList = []
+# def fibonacci(a,b,n,t):
+#     ans = lambda x : myList.append(x)
+#     ans(a)
+#     c = a+b
+#     a = b
+#     b = c 
+#     t+=1
+#     if(t==n):
+#         print(myList)
+#         return;
+#     return fibonacci(a,b,n,t)
+# fibonacci(a,b,n,temp)
+
+
+# lambda
+# ans =  lambda a,b,n,temp : ans(a,b,n,temp) 
+
+# -------------------------------------------------------
+# 1 + 1/x**1   + 2/x**2....... + n/x**n 
+# x = 2  , n = 3 
+
+# 1 + 1/2 + 1/4 + 1/8
+# = 1.3456
+
