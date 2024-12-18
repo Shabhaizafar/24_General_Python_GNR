@@ -85,10 +85,9 @@
 # 20 23 56
 # myStr = "sdf 23 safs8 5 sdfsd8 sdfs 56 21sfs 20 5"
 
-# filter(lambda x : x.isdigit() and , sorted(myStr.split(' ')))
+# ans = ' '.join(sorted(list(filter(lambda x : x.isdigit() and int(x) > len(myStr.split(' ')), sorted(myStr.split(' '))))))
 
-
-# print()
+# print(ans)
 #--------------------------------------
 
 # 21. Write a Python program that multiplies each number in a list with a given number using lambda functions. Print the results.
@@ -96,22 +95,70 @@
 # Given number: 2
 # Result:
 # 4 8 12 18 22
+
+# myList = [2, 4, 6, 9, 11]
+# n = 2 
+
+# ans = ' '.join(list(map(lambda x : str(x*n),myList)))
+# print(ans)
+
 #--------------------------------------
 
 # 22. Write a Python program that sums the length of a list of names after removing those that start with lowercase letters. Use the lambda function.
 # Result:
 # 16
+
+# myList = ["Alice", "Bob", "charlie", "Diana"]
+
+
+# ans = list(map(lambda x : len(x),list(filter(lambda x : x.istitle(),myList))))
+# print(sum(ans,100))
+
+# sum = 100 + 5 + 3 +5
+# 
 #--------------------------------------
+
 
 # 23. Write a Python program to calculate the sum of the positive and negative numbers of a given list of numbers using the lambda function.
 # Original list: [2, 4, -6, -9, 11, -12, 14, -5, 17]
 # Sum of the positive numbers: -32
 # Sum of the negative numbers: 48
+
+# myList = [2, 4, -6, -9, 11, -12, 14, -5, 17] 
+
+# print("Negative : ",sum(list(filter(lambda x : x < 0 ,myList))))
+# print("Positive : ",sum(list(filter(lambda x : x > 0 ,myList))))
+
 #--------------------------------------
 
 # 24. Write a Python program to find numbers within a given range where every number is divisible by every digit it contains.
 # Sample Output:
-# [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
+# myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
+
+# 10/1    14/1   14/4        15/1    15/5
+myList = []
+n1 = 1
+n2 = 30
+def myfu(a):
+    n1 = a
+    for j in n1 : 
+        if(int(n1)%int(j)!=0):
+            return 0
+    return 1
+
+for i in range(n1,n2+1):
+    if(myfu(str(i))):
+        myList.append(i)
+
+print(myList)
+
+
+
+
+
+
+    
+
 #--------------------------------------
 
 # 25. Write a Python program to create the next bigger number by rearranging the digits of a given number.
