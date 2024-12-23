@@ -131,26 +131,30 @@
 
 #--------------------------------------
 
-# 24. Write a Python program to find numbers within a given range where every number is divisible by every digit it contains.
+# List  : 
+
+# 24. W rite a Python program to find numbers within a given range where every number is divisible by every digit it contains.
 # Sample Output:
 # myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
 
 # 10/1    14/1   14/4        15/1    15/5
-myList = []
-n1 = 1
-n2 = 30
-def myfu(a):
-    n1 = a
-    for j in n1 : 
-        if(int(n1)%int(j)!=0):
-            return 0
-    return 1
 
-for i in range(n1,n2+1):
-    if(myfu(str(i))):
-        myList.append(i)
+# myList = []
+# n1= 1
+# n2 = 30
+# for i in range(n1,n2+1):
+#     # temp=1
+#     # for j in str(i):
+#     #     if(int(j)==0 or int(str(i))%int(j)!=0):
+#     #             temp = 0
+#     #             break
+#     # if(temp):
+#         myList.append(str(i))
+# print(myList)
 
-print(myList)
+
+
+
 
 
 
@@ -172,3 +176,14 @@ print(myList)
 # Next bigger number: 120
 # Original number: 445
 # Next bigger number: 454
+
+
+# n1 = "102"
+
+# ans = lambda x : x[:-2]+''.join(list(reversed(x[-2:])))
+
+# output =  lambda a : print(a) if int(a)>int(n1) else print(False)
+
+# output(ans(n1))
+
+# 
