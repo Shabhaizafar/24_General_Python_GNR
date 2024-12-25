@@ -338,3 +338,33 @@
 # Remove None value from the said list:
 # [12, 0, 23, -55, 234, 89, 0, 6, -12]
 #--------------------------------------
+
+
+# 49. Write a Python program to count the occurrences of items in a given list using lambda.
+# Original list:
+# myList = [3, 4, 5, 8, 0, 3, 8, 5, 0, 3, 1, 5, 2, 3, 4, 2]
+# # Count the occurrences of the items in the said list:
+# # {3: 4, 4: 2, 5: 3, 8: 2, 0: 2, 1: 1, 2: 2}
+# # print(myList)
+# myDict = {}
+
+
+# ans = list(map(lambda x : myDict.setdefault(x,myList.count(x)),myList));
+# # print(ans)
+# print(myDict)
+
+# myList = [('V', 62), ('VI', 68), ('VII', 72), ('VIII', 70), ('IX', 74), ('X', 65)]
+# print(myList)
+
+# ans = max(myList,key=lambda x : x[1])[1],min(myList,key=lambda x : x[1])[1];
+# print(ans)
+
+
+
+# a = 12,13,14,14
+# print(type(a))
+
+# *a,b = 12,13,13,14
+
+# print(a)
+# print(b)

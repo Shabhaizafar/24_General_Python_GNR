@@ -118,7 +118,7 @@
 # ((233, 33), (1416, 55), (2345, 34))
 
 
-print(tuple(map(lambda x : tuple(map(lambda z : int(z),filter(lambda y : y.isdigit(),x))),(('233', 'ABCD', '33'), ('1416', 'EFGH', '55'), ('2345', 'WERT', '34')))))
+# print(tuple(map(lambda x : tuple(map(lambda z : int(z),filter(lambda y : y.isdigit(),x))),(('233', 'ABCD', '33'), ('1416', 'EFGH', '55'), ('2345', 'WERT', '34')))))
 
 
 
