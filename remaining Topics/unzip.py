@@ -26,3 +26,10 @@
 # Unzipping Data into Separate Lists : 
 
 # You are given a list of tuples where each tuple contains a name and age (e.g., ("Alice", 25)). How can you unzip this data into two separate lists: one for names and another for ages?
+
+myList = [("Alice", 20),("qwert", 25),("ERTH", 21),("YTRE", 23)];
+
+print(myList)
+
+ans = tuple(zip(*myList))
+print(list(ans[0]),list(ans[1]))
