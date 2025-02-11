@@ -52,32 +52,32 @@
 # c1.property()
 
 ##################################################
-class GrandFather : 
-    def __init__(self):
-        self.GrandFatherName = "Rajesh"
+# class GrandFather : 
+#     def __init__(self):
+#         self.GrandFatherName = "Rajesh"
 
-    def bioData(self,v1,v2):
-        print(f"My Name is {v1}.my Age is {v2}.")
-
-
-class Father(GrandFather) : 
-    def __init__(self):
-        super().__init__()
-        self.Fathername = "Ajay"
-
-class Child(Father) : 
-    def __init__(self,cname,age):
-        super().__init__()
-        self.childname = cname
-        self.age = age
+#     def bioData(self,v1,v2):
+#         print(f"My Name is {v1}.my Age is {v2}.")
 
 
-c1 = Child("Raj",20)
+# class Father(GrandFather) : 
+#     def __init__(self):
+#         super().__init__()
+#         self.Fathername = "Ajay"
 
-print(c1.childname)
-print(c1.age)
-print(c1.Fathername)
-print(c1.GrandFatherName)
+# class Child(Father) : 
+#     def __init__(self,cname,age):
+#         super().__init__()
+#         self.childname = cname
+#         self.age = age
+
+
+# c1 = Child("Raj",20)
+
+# print(c1.childname)
+# print(c1.age)
+# print(c1.Fathername)
+# print(c1.GrandFatherName)
 
 
 
