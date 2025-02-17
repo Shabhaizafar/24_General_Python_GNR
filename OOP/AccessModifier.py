@@ -30,29 +30,29 @@
 # Theoretically, protected methods and fields can be accessed within the same class it is declared and its subclass.
 
 
-class Person : 
-    _Persondata = None
-    def __init__(self,fname):
-        self._Persondata = fname
+# class Person : 
+#     _Persondata = None
+#     def __init__(self,fname):
+#         self._Persondata = fname
 
-    def _printData(self):
-        print(self._Persondata)
+#     def _printData(self):
+#         print(self._Persondata)
 
-class Child(Person) : 
-    def __init__(self,fname,cname):
-        super().__init__(fname)
-        self.Childdata = cname
+# class Child(Person) : 
+#     def __init__(self,fname,cname):
+#         super().__init__(fname)
+#         self.Childdata = cname
 
-    def printdata(self):
-        print(self.Childdata,self._Persondata)
+#     def printdata(self):
+#         print(self.Childdata,self._Persondata)
 
 
-obj1 = Child("Person Main","Child Class")
+# obj1 = Child("Person Main","Child Class")
 
-print(obj1.Childdata)
-print(obj1._Persondata)
+# print(obj1.Childdata)
+# print(obj1._Persondata)
 
-print(dir(obj1))
+# print(dir(obj1))
 
 
 
@@ -73,9 +73,26 @@ print(dir(obj1))
 # Click me to see the sample solution
 
 
-dob =  "12-12-2023"
-from datetime import datetime  as dt
+# dob =  "12-12-2023"
+# from datetime import datetime  as dt
 
-data = dt.today()
-print(data.date())
+# data = dt.today()
+# print(data.date())
 
+
+# 6. Write a Python program to create a class representing a stack data structure. Include methods for pushing and popping elements.
+# Click me to see the sample solution
+
+# 7. Write a Python program to create a class representing a linked list data structure. Include methods for displaying linked list data, inserting and deleting nodes.
+# Click me to see the sample solution
+
+# 8. Write a Python program to create a class representing a shopping cart. Include methods for adding and removing items, and calculating the total price.
+# Click me to see the sample solution
+
+# 9. Write a Python program to create a class representing a stack data structure. Include methods for pushing, popping and displaying elements.
+# Click me to see the sample solution
+
+# 10. Write a Python program to create a class representing a queue data structure. Include methods for enqueueing and dequeueing elements.
+# Click me to see the sample solution
+
+# 11. Write a Python program to create a class representing a bank. Include methods for managing customer accounts and transactions.
