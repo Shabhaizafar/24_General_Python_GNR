@@ -40,22 +40,21 @@ file1.close()
 
 #################################3
 # 1. Write a Python program to read an entire text file.
-# Click me to see the sample solution
+
 
 # 2. Write a Python program to read first n lines of a file.
-# Click me to see the sample solution
+
 
 # 4. Write a Python program to read last n lines of a file.
-# Click me to see the sample solution
+
 
 # 5. Write a Python program to read a file line by line and store it into a list.
-# Click me to see the sample solution
+
 
 # 6. Write a Python program to read a file line by line store it into a variable.
-# Click me to see the sample solution
+
 
 # 7. Write a Python program to read a file line by line store it into an array.
-# Click me to see the sample solution
+
 
 # 8. Write a python program to find the longest words.
-# Click me to see the sample solution
