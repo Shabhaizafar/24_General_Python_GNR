@@ -17,13 +17,13 @@ mycursor = con.cursor()
 # con.commit()
 
 # Fetch data from the table
-mycursor.execute("select * from Students")
-# print(mycursor.fetchall())
+# mycursor.execute("select * from Students")
+# # print(mycursor.fetchall())
 
-mydata = mycursor.fetchall()
-for i in mydata:
-    print(i)
-con.close()
+# mydata = mycursor.fetchall()
+# for i in mydata:
+#     print(i)
+# con.close()
 
 # Create a Questions for the database Employees
 # 1. Create a database Employees
